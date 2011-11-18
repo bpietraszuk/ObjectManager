@@ -1,4 +1,4 @@
-package sprawdzian.domain;
+package domain;
 
 public class Monitor {
 

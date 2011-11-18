@@ -1,8 +1,9 @@
-package sprawdzian.service;
+package service;
 
 import java.util.List;
 
-import sprawdzian.domain.Monitor;
+import domain.Monitor;
+
 
 
 

@@ -1,9 +1,10 @@
-package sprawdzian.service;
+package service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import sprawdzian.domain.Monitor;
+import domain.Monitor;
+
 
 public class MonitorManagerMemory implements MonitorManager {
 

@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="monitor" class="sprawdzian.domain.Monitor" scope="session"></jsp:useBean>
-	<jsp:useBean id="monitorManager" class="sprawdzian.service.MonitorManagerMemory" scope="application"/>
+<jsp:useBean id="monitor" class="domain.Monitor" scope="session"></jsp:useBean>
+	<jsp:useBean id="monitorManager" class="service.MonitorManagerMemory" scope="application"/>
 	<jsp:setProperty name="monitor" property="*" />
 	<%
 		if(request.getParameter("rozdzielczosc") != null && request.getParameter("marka")!=null ){

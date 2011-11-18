@@ -1,4 +1,4 @@
-package sprawdzian.web;
+package web;
 import java.io.IOException;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -8,9 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import sprawdzian.domain.Monitor;
-import sprawdzian.service.MonitorManager;
-import sprawdzian.service.MonitorManagerMemory;
+import domain.Monitor;
+
+import service.MonitorManager;
+import service.MonitorManagerMemory;
 
 
 
