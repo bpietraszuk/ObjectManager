@@ -11,7 +11,7 @@
 	<jsp:useBean id="monitorManager" class="service.MonitorManagerMemory" scope="application"/>
 	<jsp:setProperty name="monitor" property="*" />
 	<%
-		if(request.getParameter("rozdzielczosc") != null && request.getParameter("marka")!=null ){
+		if(request.getParameter("resolution") != null && request.getParameter("brand")!=null ){
 			monitorManager.findMonitors(monitor);
 		}
 	%>

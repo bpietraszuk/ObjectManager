@@ -8,22 +8,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Add</title>
 </head>
-<body>
-	<jsp:useBean id="monitor" class="domain.Monitor"
-		scope="session"></jsp:useBean>
-	<jsp:useBean id="monitorManager"
-		class="service.MonitorManagerMemory" scope="application" />
-	<jsp:setProperty name="monitor" property="rozdzielczosc"
-		value="<%=request.getParameter(\"rozdzielczosc\")%>" />
-	<jsp:setProperty name="monitor" property="marka"
-		value="<%=request.getParameter(\"marka\")%>" />
-	<%
-		if (request.getParameter("rozdzielczosc") != null && request.getParameter("marka") != null) {
-			monitorManager.updateMonitor(monitor);
-		}
-	%>
-	<h1>All monitors:</h1>
-	<h2>${monitorManager.allMonitors}</h2>
-	<a href="start.jsp">Come back to start!</a>
+<jsp:useBean id="monitor" class="domain.Monitor" scope="session"></jsp:useBean>
+<jsp:useBean id="monitorManager" class="service.MonitorManagerMemory"
+	scope="application" />
+<jsp:setProperty name="monitor" property="resolution"
+	value="<%=request.getParameter(\"resolution\")%>" />
+<jsp:setProperty name="monitor" property="brand"
+	value="<%=request.getParameter(\"brand\")%>" />
+<%
+	if (request.getParameter("resolution") != null
+			&& request.getParameter("brand") != null) {
+		monitorManager.updateMonitor(monitor);
+	}
+%>
+<h1>All monitors:</h1>
+<h2>${monitorManager.allMonitors}</h2>
+<a href="start.jsp">Come back to start!</a>
 </body>
 </html>

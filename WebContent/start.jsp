@@ -11,30 +11,30 @@
 		<h1>Monitor Manager</h1>
 		<h2>Add monitor:</h2>
 		<form action="add.jsp">
-			Resolution: <input type="text" name="rozdzielczosc"
-				value="${monitor.rozdzielczosc}" /> Brand: <input type="text"
-				name="marka" value="${monitor.marka}" /> <input type="submit"
+			Resolution: <input type="text" name="resolution"
+				value="${monitor.resolution}" /> Brand: <input type="text"
+				name="brand" value="${monitor.brand}" /> <input type="submit"
 				value="OK" />
 		</form>
 		<h2>Change monitor data:</h2>
 		<form action="update.jsp">
-			Resolution: <input type="text" name="rozdzielczosc"
-				value="${monitor.rozdzielczosc}" /> Brand: <input type="text"
-				name="marka" value="${monitor.marka}" /> <input type="submit"
+			Resolution: <input type="text" name="resolution"
+				value="${monitor.resolution}" /> Brand: <input type="text"
+				name="brand" value="${monitor.brand}" /> <input type="submit"
 				value="OK" />
 		</form>
 		<h2>Delete monitor:</h2>
 		<form action="delete.jsp">
-			Resolution: <input type="text" name="rozdzielczosc"
-				value="${monitor.rozdzielczosc}" /> Brand: <input type="text"
-				name="marka" value="${monitor.marka}" /> <input type="submit" value="OK" />
+			Resolution: <input type="text" name="resolution"
+				value="${monitor.resolution}" /> Brand: <input type="text"
+				name="brand" value="${monitor.brand}" /> <input type="submit" value="OK" />
 		</form>
 
 		<form action="searchResults.jsp">
 			<h2>Find monitor:</h2>
-			Resolution: <input type="text" name="rozdzielczosc"
-				value="${monitor.rozdzielczosc}" /> Brand: <input type="text"
-				name="marka" value="${monitor.marka}" /> <input type="submit"
+			Resolution: <input type="text" name="resolution"
+				value="${monitor.resolution}" /> Brand: <input type="text"
+				name="brand" value="${monitor.brand}" /> <input type="submit"
 				value="OK" />
 		</form>
 		<form action="all.jsp">
