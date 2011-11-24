@@ -16,8 +16,7 @@
 	<jsp:setProperty name="monitor" property="*" />
 
 	<%
-		if (request.getParameter("resolution") != null
-				&& request.getParameter("brand") != null) {
+		if (request.getParameter("resolution") != null && request.getParameter("brand") != null) {
 			monitorManager.deleteMonitor(monitor);
 		}
 	%>

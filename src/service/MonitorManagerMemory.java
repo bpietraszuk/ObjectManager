@@ -5,7 +5,6 @@ import java.util.List;
 
 import domain.Monitor;
 
-
 public class MonitorManagerMemory implements MonitorManager {
 
 	private List<Monitor> db = new ArrayList<Monitor>();
@@ -14,7 +13,7 @@ public class MonitorManagerMemory implements MonitorManager {
 	@Override
 	public void addMonitor(Monitor p) {
 		Monitor nP = new Monitor(p.getResolution(), p.getBrand());
-		db.add(nP);
+		db.add(nP); 
 	}
 
 	@Override
@@ -33,6 +32,7 @@ public class MonitorManagerMemory implements MonitorManager {
 		for (Monitor mon : db) {
 			if (mon.equals(monitor)) {
 				db.remove(mon);
+				break;
 			}
 		}
 	}
